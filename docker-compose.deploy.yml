@@ -6,7 +6,7 @@
 # The image already has a HEALTHCHECK, so `docker compose ps` shows "healthy" when the service answers /health.
 services:
   api:
-    image: ${IMAGE:-churn-api:local}
+    image: churn-api:f79d06c
     ports:
       - "8000:8000"
     restart: unless-stopped
